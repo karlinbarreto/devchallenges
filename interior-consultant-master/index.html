@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interior Consultant</title>
+	<link rel="stylesheet"  href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="button">
+			<button>this interior</button>
+		</div>		
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Collection</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>			
+			</ul>
+		</nav>
+		<div class="hamburger-menu">
+			<span class="material-icons">dehaze</span>
+		</div>
+	</header>
+	<nav class="menu-movil">
+		<span class="material-icons-outlined">close</span>
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">Collection</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>			
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="text-container">
+			<h1>Modern interior</h1>
+			<p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+			<a href="#">Read more <span>&#8594;</span></a>
+		</div>
+		<div class="img-card-container">
+			<img src="img/photo1.png">
+			<div class="card">
+				<div class="icon-text">
+					<div class="icon-user">
+						<img src="img/photo2.png">
+					</div>
+					<div class="text-user">	
+						<h2>Aliza Webber</h2>
+						<h3>Interior designer</h3>
+					</div>
+				</div>		
+				<div class="card-title">
+					<h2>Designed in 2020 by Aliza Webber</h2>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<footer>
+		<h3>created by <a href="https://github.com/karlinbarreto">karlinbarreto</a> -devchallenges.io</h3>
+	</footer>
+	<script>
+		const hamburgerMenu = document.querySelector(".material-icons");
+		const movilMenu = document.querySelector(".menu-movil");
+		const close = document.querySelector(".material-icons-outlined");
+
+		hamburgerMenu.addEventListener("click", function(){
+			movilMenu.classList.add("open");
+		});
+		close.addEventListener("click", function(){
+			movilMenu.classList.remove("open");
+		});
+	</script>
+</body>
+</html>
